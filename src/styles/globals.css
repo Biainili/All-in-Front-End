@@ -1,0 +1,197 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  background: rgb(45, 45, 45);
+  background: radial-gradient(circle, #746fc3 50%, rgb(64, 64, 64) 80%);
+}
+
+body {
+  background: var(--background-color);
+  margin: 0;
+  z-index: 1;
+  overflow-x: hidden;
+}
+.padding_in_line {
+  padding: 40px;
+}
+
+.titel_sction {
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.card {
+  border: 1px solid black;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out;
+}
+.card:hover {
+  box-shadow: 0 0 30px 5px hsla(0, 1%, 73%, 0.7);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.card:hover {
+  transform: scale(1.1); /* Увеличение размера на 1.5x */
+  z-index: 10; /* Чтобы карточка была поверх других элементов */
+}
+.card-img-top {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.custom_bg {
+  background-image: url("/img/contact-bg-col.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.social_icon {
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+.social_icon:hover {
+  transform: scale(1.3);
+}
+
+.custom_header {
+  box-shadow: 3px 3px 5px rgba(116, 111, 195, 0.9),
+    0 0 10px rgba(255, 255, 255, 0.6);
+  text-shadow: 3px 3px 5px #746fc3, 0 0 10px rgba(255, 255, 255, 0.6);
+}
+
+.custom_showld {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7), 0 0 10px rgba(255, 255, 255, 0.6);
+}
+.custom_showld_two {
+  text-shadow: 2px 2px 4px rgba(116, 111, 195, 0.9),
+    0 0 10px rgba(110, 106, 106, 0.6);
+}
+
+.nav_bar a {
+  font-family: inherit; /* Использует подключенный шрифт */
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #ffffff;
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.nav_bar a:hover {
+  color: #746fc3;
+  transform: scale(1.2);
+  text-shadow: none;
+}
+
+.notary_bg_hero {
+  position: relative;
+  background: #746fc3; /* Цвет фона секции */
+  padding-top: 180px;
+  padding-bottom: 100px;
+  overflow: hidden; /* Убираем лишние элементы */
+  z-index: 0;
+}
+
+/* Первая волна */
+.notary_bg_hero::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200%; /* Ширина больше, чтобы создавалось движение */
+  height: 100px;
+  background: rgba(255, 255, 255, 0.3); /* Полупрозрачная волна */
+  clip-path: polygon(0 70%, 50% 100%, 100% 70%, 100% 100%, 0% 100%);
+  animation: wave 6s infinite linear;
+}
+
+/* Вторая волна */
+.notary_bg_hero::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200%; /* Ширина больше, чтобы создавалось движение */
+  height: 120px;
+  background: rgba(255, 255, 255, 0.2); /* Более светлая волна */
+  clip-path: polygon(0 60%, 50% 90%, 100% 60%, 100% 100%, 0% 100%);
+  animation: wave 8s infinite linear reverse; /* Обратная анимация */
+}
+
+/* Анимация волны */
+@keyframes wave {
+  0% {
+    transform: translateX(0); /* Начало */
+  }
+  100% {
+    transform: translateX(-50%); /* Движение влево */
+  }
+}
+
+.shadow-custom-notary {
+  box-shadow: 0 0 30px 5px hsl(244, 41%, 60%, 70%);
+}
+
+.shadow-custom-register {
+  box-shadow: 0 0 30px 5px hsla(0, 1%, 73%, 0.7);
+}
+
+.for_animation {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.for_animation:hover {
+  transform: scale(1.1);
+}
+
+.activ_cadaster {
+  background: rgb(79, 70, 229) !important;
+}
+
+.activ_btn_regiser {
+  background: white !important;
+  color: rgb(79, 70, 229) !important;
+  border: 2px solid #4f46e5;
+  font-weight: bold !important;
+}
+
+/* FOR HEDER STERT */
+@media (max-width: 1024px) {
+  .custom_for_header_lg {
+    box-shadow: 3px 3px 5px rgba(116, 111, 195, 0.9),
+      0 0 10px rgba(255, 255, 255, 0.6);
+  }
+
+  .custom_for_header_lg::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: #746fc3;
+  }
+}
+
+/* FOR HEDER END */
