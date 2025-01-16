@@ -71,18 +71,24 @@ export default function Header() {
           } lg:flex flex-col lg:flex-row lg:max-w-[800px] lg:items-center lg:justify-between lg:static absolute top-20 left-0 w-full bg-black lg:bg-transparent lg:w-full rounded-b-[20px] nav_bar lg:p-0 p-4 custom_for_header_lg`}
         >
           <li className="lg:p-0 p-4 ">
-            <Link href="http://localhost:3000/#digital-services">
+            <Link href="https://demo-allin-app.netlify.app/#digital-services">
               Թվային ծառայություններ
             </Link>
           </li>
           <li className="lg:p-0 p-4">
-            <Link href="http://localhost:3000/#services">Ծառայություններ</Link>
+            <Link href="https://demo-allin-app.netlify.app/#services">
+              Ծառայություններ
+            </Link>
           </li>
           <li className="lg:p-0 p-4">
-            <Link href="http://localhost:3000/#about-us">Մեր մասին</Link>
+            <Link href="https://demo-allin-app.netlify.app/#about-us">
+              Մեր մասին
+            </Link>
           </li>
           <li className="lg:p-0 p-4">
-            <Link href="http://localhost:3000/#contact">Կապվեք մեզ հետ</Link>
+            <Link href="https://demo-allin-app.netlify.app/#contact">
+              Կապվեք մեզ հետ
+            </Link>
           </li>
         </ul>
       </nav>
