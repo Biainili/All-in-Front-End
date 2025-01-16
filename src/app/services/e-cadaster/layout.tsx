@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function CadasterLayout({
   children,
 }: {
@@ -92,7 +93,7 @@ export default function CadasterLayout({
               </div>
             </div>
 
-            <img
+            <Image
               className="lg:mx-0 mx-auto h-full rounded-3xl object-cover justify-self-end"
               src="https://pagedone.io/asset/uploads/1717751272.png"
               alt="About Us image"

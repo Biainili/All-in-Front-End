@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import {
   FaPhone,
   FaEnvelope,
@@ -153,7 +154,7 @@ export default function Contact() {
         <div className="p-4 sm:p-10 md:p-16 lg:p-20  bg-white shadow-lg rounded-lg flex flex-col gap-8 items-center text-center">
           {/* Логотип и название */}
           <div className="flex flex-row items-center gap-2">
-            <img
+            <Image
               src="/path-to-logo.svg"
               alt="Pagedone Logo"
               className="w-12 h-12"
