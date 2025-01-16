@@ -12,7 +12,7 @@ export default function Decloretion() {
           {/* plan 1 */}
           <div className="bg-white p-8 shadow-custom-notary rounded-lg flex flex-col  w-full max-w-md gap-2 justify-between">
             <h3 className="text-xl font-bold mb-4 text-indigo-500 ">
-              Փաթեթ 1: "Սկսնակ"
+              Փաթեթ 1: &quot;Սկսնակ&quot;
             </h3>
             <p className="text-gray-700 mb-4 text-center">
               Հարմար է ֆիզիկական անձանց կամ փոքր բիզնեսների համար, ովքեր
@@ -37,7 +37,7 @@ export default function Decloretion() {
           {/* plan 2 */}
           <div className="bg-white p-8 shadow-custom-notary rounded-lg flex flex-col w-full max-w-md gap-2 justify-between">
             <h3 className="text-xl font-bold mb-4 text-indigo-500 ">
-              Փաթեթ 2: "Պրոֆեսիոնալ"
+              Փաթեթ 2: &quot;Պրոֆեսիոնալ&quot;
             </h3>
             <p className="text-gray-700 mb-4 text-center">
               Նպատակահարմար է փոքր և միջին բիզնեսների համար:
@@ -64,7 +64,7 @@ export default function Decloretion() {
           {/* plan 3 */}
           <div className="bg-white p-8 shadow-custom-notary rounded-lg flex flex-col w-full max-w-md gap-2 justify-between">
             <h3 className="text-xl font-bold mb-4 text-indigo-500 ">
-              Փաթեթ 3: "Կորպորատիվ"
+              Փաթեթ 3: &quot;Կորպորատիվ&quot;
             </h3>
             <p className="text-gray-700 mb-4 text-center">
               Մեծ բիզնեսների և կազմակերպությունների համար:

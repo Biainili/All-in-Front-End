@@ -1,5 +1,7 @@
 "use client";
 
+import Image from 'next/image';
+
 import React, { useState } from "react";
 import SendReq from "./SendReq";
 import Contact from "./Contact";
@@ -60,7 +62,7 @@ export default function ContactSection() {
             </div>
 
             <div className="relative ">
-              <img
+              <Image
                 src="https://pagedone.io/asset/uploads/1696488602.png"
                 alt="ContactUs tailwind section"
                 className="w-full lg:h-[800px] h-[400px] lg:rounded-l-2xl rounded-2xl bg-blend-multiply bg-indigo-700 object-cover"

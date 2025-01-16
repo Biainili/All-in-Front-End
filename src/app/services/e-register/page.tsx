@@ -1,4 +1,5 @@
 import ContactSection from "./components/ContactSection";
+import Image from 'next/image';
 
 export default function Register() {
   return (
@@ -57,7 +58,7 @@ export default function Register() {
 
             <div className="w-full lg:justify-end justify-center items-end flex">
               <div className="sm:w-[604px] w-full sm:h-[646px] h-full sm:bg-indigo-500 rounded-3xl sm:border border-gray-200 relative shadow-custom-register">
-                <img
+                <Image
                   className="sm:mt-5 sm:ml-5 w-full h-full rounded-3xl object-cover shadow-custom-notary"
                   src="https://pagedone.io/asset/uploads/1717742431.png"
                   alt="about Us image"

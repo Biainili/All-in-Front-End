@@ -65,7 +65,7 @@ export default function Page() {
   // Завершение первого шага
   const handleCompleteStep1 = (data: {
     city: string;
-    notaryId: number;
+    notaryId: number | null;
     serviceId: number;
     date: string;
     time: string;
