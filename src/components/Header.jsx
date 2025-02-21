@@ -34,7 +34,7 @@ export default function Header() {
       const id = window.location.hash.replace("#", "");
       setTimeout(() => {
         document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-      }, 100);
+      }, 500);
     }
   }, []);
 
