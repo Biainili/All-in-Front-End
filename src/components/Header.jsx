@@ -22,7 +22,7 @@ export default function Header() {
       // Добавляем задержку, чтобы убедиться, что элемент загружен
       setTimeout(() => {
         document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
-      }, 100);
+      }, 500);
     } else {
       router.push(targetUrl);
     }
