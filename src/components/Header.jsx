@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import { Poppins } from "next/font/google";
+import { useRouter } from "next/navigation";
 
 const poppins = Poppins({
   weight: ["400", "600", "700"],
@@ -11,6 +12,16 @@ const poppins = Poppins({
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const router = useRouter();
+  const handleClick = (e, id) => {
+    e.preventDefault();
+    if (window.location.hostname === "demo-allin-app.netlify.app") {
+      document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    } else {
+      router.push(`https://demo-allin-app.netlify.app/#${id}`)
+    }
+  }
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -66,12 +77,11 @@ export default function Header() {
 
         {/* Навигационное меню */}
         <ul
-          className={`${
-            isMenuOpen ? "flex" : "hidden"
-          } lg:flex flex-col lg:flex-row lg:max-w-[800px] lg:items-center lg:justify-between lg:static absolute top-20 left-0 w-full bg-black lg:bg-transparent lg:w-full rounded-b-[20px] nav_bar lg:p-0 p-4 custom_for_header_lg`}
+          className={`${isMenuOpen ? "flex" : "hidden"
+            } lg:flex flex-col lg:flex-row lg:max-w-[800px] lg:items-center lg:justify-between lg:static absolute top-20 left-0 w-full bg-black lg:bg-transparent lg:w-full rounded-b-[20px] nav_bar lg:p-0 p-4 custom_for_header_lg`}
         >
           <li className="lg:p-0 p-4 ">
-            <Link href="https://demo-allin-app.netlify.app/#digital-services">
+            <Link href="https://demo-allin-app.netlify.app/#digital-services" onClick={(e) => handleClick(e, "digital-services")}>
               Թվային ծառայություններ
             </Link>
           </li>
